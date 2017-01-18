@@ -26,7 +26,7 @@ export default {
   methods: {
     fetchData () {
       this.posts = []
-      fetchMediumPosts(this.$route.params.category, this.loadPosts)
+      fetchMediumPosts(this.loadPosts)
     },
     loadPosts (result) {
       this.posts = result

@@ -10,40 +10,23 @@ const Tags = {
     'ux',
     'ux-design',
     'web-design'
-  ],
-  'development': [
-    'css',
-    'html5',
-    'javascript',
-    'react',
-    'nodejs',
-    'front-end-development',
-    'vuejs',
-    'web-development'],
-  'marketing': [
-    'blogging',
-    'marketing',
-    'seo',
-    'social-media',
-    'startup',
-
   ]
 }
 
-var mediumCache = {}
+var mediumCache = []
 
-export function fetchMediumPosts(category, cb) {
+export function fetchMediumPosts(cb) {
 
-  if(mediumCache[category]) {
-    cb(mediumCache[category])
+  if(mediumCache.length > 0) {
+    cb(mediumCache)
     return
   }
   
   var query = 'select * from rss where url in ('
 
-  for(var i = 0; i < Tags[category].length; i++) {
-    query += ('"https://medium.com/feed/tag/' + Tags[category][i] + '"')
-    if(i != Tags[category].length - 1) {
+  for(var i = 0; i < Tags['design'].length; i++) {
+    query += ('"https://medium.com/feed/tag/' + Tags['design'][i] + '"')
+    if(i != Tags['design'].length - 1) {
       query += ', '
     }
   }
@@ -72,7 +55,7 @@ export function fetchMediumPosts(category, cb) {
           }
           post.category.forEach(function (tag) {
             // console.log(tag)
-            if(categories.length < 3 && shouldIncludeTag(Tags[category], tag)) {
+            if(categories.length < 3 && shouldIncludeTag(Tags['design'], tag)) {
               categories.push( { title: tag, url: "https://medium.com/tag/"+tag+"/latest"})
             }
           })
@@ -81,7 +64,7 @@ export function fetchMediumPosts(category, cb) {
           url_dict[post.guid.content] = true
         }
       })
-      mediumCache[category] = posts
+      mediumCache = posts
       cb(posts)
     })
     .catch(function (error) {
