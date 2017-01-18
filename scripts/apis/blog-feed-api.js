@@ -55,14 +55,6 @@ export function fetchBlogPosts(id, cb) {
     return
   }
 
-  var query = 'select * from rss where url="'
-  if(IsAtom[id]) {
-    query = 'select * from feednormalizer where output="rss_2.0" AND url="'
-  }
-
-  query += BlogMap[id]
-  query += '" LIMIT 20'
-
   // console.log(query)
 
   axios.get('https://kanishkkunal.stdlib.com/rss2json', {
@@ -73,7 +65,7 @@ export function fetchBlogPosts(id, cb) {
     .then(function (response) {
       var posts = []
 
-      console.log(JSON.stringify(response, null, 4))
+      // console.log(JSON.stringify(response, null, 4))
       var items = response.data.items
 
       items.forEach( function(post) {
