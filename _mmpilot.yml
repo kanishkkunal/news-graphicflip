@@ -7,8 +7,8 @@ serve:
 ## additional data for site available as site.{key} in pug templates
 site:
   url: "https://news.graphicflip.com"
-  title: SDR News
-  icon: sdr-logo
+  title: GraphicFlip
+  icon: graphicflip
   github: "https://github.com/GraphicFlip"
   twitter: "https://twitter.com/monikaratan"
   analytics: "UA-37350394-11"
