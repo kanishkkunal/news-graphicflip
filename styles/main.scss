@@ -1,0 +1,95 @@
+@import "sdr/sdr";
+
+#source-toggle + label{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 999;
+  background-color: #fff;
+}
+
+ul.news-scoure-menu {
+  font-size: 90%;
+
+  li {
+    margin: 0;
+    line-height: 28px;
+  }
+
+  li a {
+    display: block;
+    width: 100%;
+    opacity: 0.6;
+    padding: 3px 20px 3px 0;
+    line-height: 24px;
+
+    svg {
+      margin-right: 4px;
+    }
+  }
+
+  li a.router-link-active, li a:hover {
+    text-decoration: none;
+    opacity: 1;
+  }
+
+  li a.router-link-active {
+    font-size: 110%;
+    font-weight: 500;
+  }
+}
+
+.thumbnail {
+    margin-top: 3px;
+    padding: 0;
+}
+
+.media-left .thumbnail-small + .media-body {
+  margin-left: 4px;
+}
+
+.entry-title a:visited {
+    color: #888;
+}
+
+.entry-title .title-domain {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+}
+
+.entry-meta {
+    font-weight: 300;
+    font-size: 90%;
+
+    .dot {
+      margin: 0 0.5em;
+      color: #ccc;
+    }
+
+    .dot + span {
+      margin-left: 0;
+    }
+}
+
+.entry-meta .category {
+    font-size: 90%;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: all .2s ease;
+}
+
+.fade-enter, .fade-leave-active {
+  opacity: 0;
+} 
+
+
+@include mobile {
+  .grid-sidebar-left .container-readable {
+    padding: 0;
+  }
+}
