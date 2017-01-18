@@ -49,7 +49,20 @@ nav .current-menu-item > a {
 }
 
 .footer a {
-    color: #5d5d5d!important;
+    color: $color-footer-default-link!important;
+}
+
+.footer .icon {
+    width: 1.9rem;
+    height: 1.9rem;
+}
+
+.footer-social .button.button-text {
+  padding: 0 5px 0 0;
+}
+
+.footer-social .button.button-text:hover svg {
+  fill: #fff;
 }
 
 .footer a:hover {

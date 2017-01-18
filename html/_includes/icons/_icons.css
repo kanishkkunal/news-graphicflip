@@ -7,10 +7,34 @@
   fill: currentColor;
 }
 
-.icon-twitter {
-  width: 0.9285703301429749em;
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-twitter-square {
+  width: 0.8571428571428571em;
 }
 
-.icon-github {
-  width: 0.8571436107158661em;
+.icon-facebook-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-pinterest-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-rss-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-youtube-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-behance-square {
+  width: 0.8571428571428571em;
 }
