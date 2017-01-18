@@ -28,16 +28,6 @@ nav .current-menu-item > a {
   color: #fff;
 }
 
-@include mobile {
-  .header-right .menu {
-    margin-bottom: 1rem;
-  }
-  .header-right .menu li {
-    display: inline-block;
-    padding: 0 10px;
-  }
-}
-
 .main {
   min-height: 480px;
 }
