@@ -73,13 +73,13 @@ export function fetchBlogPosts(id, cb) {
     .then(function (response) {
       var posts = []
 
-      //console.log(JSON.stringify(response, null, 4))
+      console.log(JSON.stringify(response, null, 4))
       var items = response.data.items
 
       items.forEach( function(post) {
         if(shouldAdd(post)) {
           post.url = post.link
-          post.pubDate = post.pubDate? post.pubDate : post.date
+          post.pubDate = post.created
           post.time = Math.floor((new Date(post.pubDate)).getTime() / 1000)
           if(post.creator) {
             // string html tags
