@@ -65,21 +65,19 @@ export function fetchBlogPosts(id, cb) {
 
   // console.log(query)
 
-  axios.get('https://query.yahooapis.com/v1/public/yql', {
+  axios.get('https://kanishkkunal.stdlib.com/rss2json', {
       params: {
-        q: query,
-        format: 'json'
+        url: BlogMap[id]
       }
     })
     .then(function (response) {
       var posts = []
 
-      // console.log(JSON.stringify(response, null, 4))
-      var items = IsAtom[id] ? response.data.query.results.rss.channel.item : response.data.query.results.item
+      //console.log(JSON.stringify(response, null, 4))
+      var items = response.data.items
 
       items.forEach( function(post) {
         if(shouldAdd(post)) {
-          // console.log(JSON.stringify(post, null, 4))
           post.url = post.link
           post.pubDate = post.pubDate? post.pubDate : post.date
           post.time = Math.floor((new Date(post.pubDate)).getTime() / 1000)

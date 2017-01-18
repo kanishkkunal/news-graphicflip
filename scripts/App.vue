@@ -44,10 +44,18 @@
 
 <script>
 import LinksMap from './link-map'
+import {fetchBlogPosts} from './apis/blog-feed-api'
+
 export default {
     computed: {
       links: function() {
         return LinksMap
+      }
+    },
+    created () {
+      //Preload blogs feed
+      for(var i = 0; i < LinksMap.blogs.length; i++) {
+        fetchBlogPosts(LinksMap.blogs[i].to, function() {})
       }
     }
 }
