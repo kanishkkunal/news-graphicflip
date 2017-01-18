@@ -1,11 +1,11 @@
 extends ./_layout-root.pug
 block header
   header.header
-    .container
+    .container-content
       .header-left
         a(href='https://graphicflip.com/').site-branding
           img(src="/img/graphicflip-logo.png")
-          h1.title.screen-reader-text SDR News
+          h1.title.screen-reader-text GraphicFlip
       .menu-toggle
         input(type="checkbox")#menu-toggle
         label(for="menu-toggle").header-right
@@ -13,9 +13,8 @@ block header
             span Toggle
           span Menu
         .menu-toggle-content
-          +menu(data.menu.main, 'menu')
-          .header-right
-            +menu(data.menu.secondary, 'menu')
+          .header-right            
+            +menu(data.menu.main, 'menu')
             .expandable-search
               include ./../_includes/search-form.html
             
