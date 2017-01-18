@@ -18,6 +18,7 @@ View News Site
  - [mmpilot](https://mmpilot.kunruchcreations.com/) - Build tool
  - [Font Awesome](http://fontawesome.io/) and [IcoMoon](https://icomoon.io/) for SVG icons used on site.
  - [Netlify](https://www.netlify.com/) - Hosting Provider.
+ - [stdlib](https://stdlib.com/) - Function as a Service
 
 ## License
 
