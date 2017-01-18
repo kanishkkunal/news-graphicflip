@@ -4,7 +4,7 @@ Latest news for Graphic Designers aggregated from multiple sources such as sub-r
 
 <p align="center">
 <a href="https://news.graphicflip.com/" title="News for Graphic Designers">
-<img src="http://news.graphicflip.com/img/featured.png" alt="GraphicFlip News"></img>
+<img src="https://news.graphicflip.com/img/featured.png" alt="GraphicFlip News"></img>
 <br>
 View News Site
 </a>
