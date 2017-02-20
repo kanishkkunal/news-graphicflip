@@ -9,7 +9,6 @@ const designLinks = {
     {to: 'alistapart', title: 'A List Apart'},
     {to: 'designmodo', title: 'Designmodo'},
     {to: 'spoongraphics', title: 'Spoon Graphics'},
-    {to: 'tutsplus-design', title: 'Tuts+ Design'},
     {to: 'graphicdesignjunction', title: 'Graphic Design Junction'},
     {to: 'onextrapixel', title: 'Onextrapixel'},
     {to: 'designshack', title: 'Design Shack'},
