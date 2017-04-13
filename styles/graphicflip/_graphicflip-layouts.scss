@@ -1,3 +1,7 @@
+.container-content {
+  max-width: 1240px;
+}
+
 @include desktop {
   .grid-sidebar-left > .one-half:first-child {
     width: 20%;
