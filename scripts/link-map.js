@@ -1,6 +1,7 @@
 const designLinks = {
   communities: [
     {to: 'reddit', iconClass: 'icon icon-reddit-alien', iconID: '#icon-reddit-alien', title: 'reddit'},
+    {to: 'refind', iconClass: 'icon icon-refind', iconID: '#icon-refind', title: 'Refind'},
     // {to: 'medium', iconClass: 'icon icon-medium', iconID: '#icon-medium', title: 'Medium'}
   ],
   blogs: [
