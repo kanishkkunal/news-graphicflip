@@ -15,7 +15,6 @@ const designLinks = {
     {to: 'designshack', title: 'Design Shack'},
     {to: 'creativebloq', title: 'Creative Bloq'},
     {to: 'line25', title: 'Line25'},
-    {to: 'google-design', title: 'Google Design'},
     {to: 'awwwards', title:'Awwwards'},
     {to: 'graphic-flip', title: 'GraphicFlip'}
   ]
