@@ -2,6 +2,11 @@ import axios from 'axios'
 
 const BlogMap = {
   'graphic-flip': 'https://graphicflip.com/feed/',
+  'from-up-north': 'http://feeds.feedburner.com/FromUpNorth',
+  'ilt': 'http://ilovetypography.com/feed/',
+  'abdz': 'http://abduzeedo.com/feed/',
+  'justcreative': 'http://feeds.feedburner.com/JustCreativeDesignBlog',
+  'ucreative': 'http://www.ucreative.com/feed/',
   'smashing-magazine': 'https://www.smashingmagazine.com/feed/',
   'sdr': 'https://superdevresources.com/feed/',
   'template-flip' : 'https://templateflip.com/feed/',
